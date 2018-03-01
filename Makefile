@@ -1,5 +1,5 @@
 tests: .test
-.test: $(shell find src/ -type f -name 'problem*.hs')
+.test: $(shell find src/ -not \( -name 'Lib*.hs' \) -and \( -type f -name 'problem*.hs' \) )
 	@for sourcefile in $? ; do \
 	    echo "Testing $$sourcefile:"; \
 	    runhaskell $$sourcefile; \
