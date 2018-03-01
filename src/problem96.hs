@@ -23,6 +23,8 @@ main = runTestTT $ TestList [
         TestCase (assertValid "longid"),
         TestCase (assertValid "a1234"),
         TestCase (assertInvalid "1234"),
+        TestCase (assertInvalid "this-ends-in-"),
+        TestCase (assertValid "a"),
         TestCase (assertInvalid "")
     ]
     where assertValid   token = assertEqual (token ++ " should be valid") True (isValid token)
