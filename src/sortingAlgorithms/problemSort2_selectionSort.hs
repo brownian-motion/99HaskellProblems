@@ -1,8 +1,8 @@
 module Main(main) where
-import           LibSorting (isSorted)
+import           Sorting    (isSorted)
 import           Test.HUnit
 
--- Sorting problem: selection sort
+-- Sorting problem 2: selection sort
 -- Implement selection sort!
 
 selectionSort :: (Ord a) => [a] -> [a]

@@ -1,8 +1,8 @@
 module Main(main) where
-import           LibSorting (isSorted)
+import           Sorting    (isSorted)
 import           Test.HUnit
 
--- Sorting problem: insertion sort
+-- Sorting problem 1: insertion sort
 -- Implement insertion sort!
 
 insertionSort :: (Ord a) => [a] -> [a]

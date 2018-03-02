@@ -1,4 +1,4 @@
-module LibSorting(isSorted) where
+module Sorting(isSorted) where
 
 isSorted :: (Ord a) => [a] -> Bool
 isSorted []              = True
