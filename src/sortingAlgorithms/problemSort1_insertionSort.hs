@@ -2,6 +2,9 @@ module Main(main) where
 import           LibSorting (isSorted)
 import           Test.HUnit
 
+-- Sorting problem: insertion sort
+-- Implement insertion sort!
+
 insertionSort :: (Ord a) => [a] -> [a]
 insertionSort = foldl insert []
     where insert :: (Ord a) => [a] -> a -> [a]
